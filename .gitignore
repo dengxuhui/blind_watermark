@@ -1,0 +1,5 @@
+# 自定义忽略文件
+/.idea/
+/build/
+/examples/
+/*.egg-info/
