@@ -41,6 +41,7 @@ class WaterMarkCore:
         # 处理透明图
         self.alpha = None
         if img.shape[2] == 4:
+            # 如果图像的第三个维度（通道数）是4，那么这意味着图像包含一个alpha通道。alpha通道通常用于表示图像的透明度信息。
             if img[:, :, 3].min() < 255:
                 self.alpha = img[:, :, 3]
                 img = img[:, :, :3]
